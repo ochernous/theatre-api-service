@@ -33,3 +33,12 @@ class Play(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Performance(models.Model):
+    show_time = models.DateTimeField()
+    play = models.ForeignKey(Play, on_delete=models.CASCADE)
+    theatre_hall = models.ForeignKey(TheatreHall, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.play.title} {self.show_time}"
