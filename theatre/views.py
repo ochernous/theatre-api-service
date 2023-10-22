@@ -46,6 +46,14 @@ class PerformanceViewSet(viewsets.ModelViewSet):
     queryset = Performance.objects.all()
     serializer_class = PerformanceSerializer
 
+    def get_queryset(self):
+        queryset = self.queryset
+
+        if self.action == "list":
+            return queryset.select_related("theatre_hall", "play")
+
+        return queryset
+
     def get_serializer_class(self):
         if self.action == "list":
             return PerformanceListSerializer
