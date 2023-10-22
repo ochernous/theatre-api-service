@@ -96,7 +96,7 @@ class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
     serializer_class = PerformanceSerializer
 
     def get_queryset(self):
-        queryset = self.queryset.select_related("theatre_hall", "play")
+        queryset = self.queryset
         plays = self.request.query_params.get("plays", "")
         date = self.request.query_params.get("date", "")
 
