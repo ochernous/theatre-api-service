@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.core.exceptions import ValidationError
 from django.db import models
 
 
@@ -70,9 +71,32 @@ class Ticket(models.Model):
     performance = models.ForeignKey(Performance, on_delete=models.CASCADE, related_name="tickets")
     reservation = models.ForeignKey(Reservation, on_delete=models.CASCADE, related_name="tickets")
 
-    def __str__(self):
-        return f"{self.performance} (row: {self.row}, seat: {self.seat})"
-
     class Meta:
         unique_together = ("performance", "row", "seat")
         ordering = ["row", "seat"]
+
+    @staticmethod
+    def validate_seat_and_row(seat: int, row: int, performance, error_to_raise):
+        for ticket_attr_value, ticket_attr_name, theatre_hall_attr_name in [
+            (row, "row", "rows"),
+            (seat, "seat", "seats_in_row")
+        ]:
+            count_attrs = getattr(performance.theatre_hall, theatre_hall_attr_name)
+            if not (1 <= ticket_attr_value <= count_attrs):
+                raise error_to_raise(
+                    {
+                        ticket_attr_name: f"{ticket_attr_name} number must be in available range: (1, {theatre_hall_attr_name}): (1, {count_attrs})"
+                    }
+                )
+
+    def clean(self):
+        self.validate_seat_and_row(self.seat, self.row, self.performance, ValidationError)
+
+    def save(
+        self, force_insert=False, force_update=False, using=None, update_fields=None
+    ):
+        self.full_clean()
+        super(Ticket, self).save(force_insert, force_update, using, update_fields)
+
+    def __str__(self):
+        return f"{self.performance} (row: {self.row}, seat: {self.seat})"
