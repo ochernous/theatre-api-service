@@ -25,6 +25,7 @@ from theatre.serializers import (
     PlayListSerializer,
     PlayDetailSerializer,
     PerformanceDetailSerializer,
+    ReservationListSerializer,
 )
 
 
@@ -91,7 +92,7 @@ class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
                 F("theatre_hall__rows") * F("theatre_hall__seats_in_row")
                 - Count("tickets")
             )
-        )
+        ).order_by("show_time")
     )
     serializer_class = PerformanceSerializer
 
@@ -125,7 +126,18 @@ class ReservationViewSet(viewsets.ModelViewSet):
     serializer_class = ReservationSerializer
 
     def get_queryset(self):
-        return self.queryset.filter(user=self.request.user)
+        queryset = self.queryset.filter(user=self.request.user)
+
+        if self.action == "list":
+            queryset = queryset.prefetch_related("tickets__performance__theatre_hall", "tickets__performance__play")
+
+        return queryset
+
+    def get_serializer_class(self):
+        if self.action == "list":
+            return ReservationListSerializer
+
+        return self.serializer_class
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
