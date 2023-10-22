@@ -54,6 +54,7 @@ class PlayViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
         queryset = self.queryset.prefetch_related("actors", "genres")
         actors = self.request.query_params.get("actors", "")
         genres = self.request.query_params.get("genres", "")
+        title = self.request.query_params.get("title", "")
 
         if actors:
             actors_ids = self.params_to_int(actors)
@@ -62,6 +63,9 @@ class PlayViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
         if genres:
             genres_ids = self.params_to_int(genres)
             queryset = queryset.filter(genres__id__in=genres_ids)
+
+        if title:
+            queryset = queryset.filter(title__icontains=title)
 
         return queryset.distinct()
 
