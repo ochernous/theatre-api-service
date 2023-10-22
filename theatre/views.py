@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from rest_framework import viewsets
 
 from theatre.models import (
@@ -84,15 +86,17 @@ class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
     serializer_class = PerformanceSerializer
 
     def get_queryset(self):
-        queryset = self.queryset
+        queryset = self.queryset.select_related("theatre_hall", "play")
         plays = self.request.query_params.get("plays", "")
-
-        if self.action in ("list", "retrieve"):
-            queryset = queryset.select_related("theatre_hall", "play")
+        date = self.request.query_params.get("date", "")
 
         if plays:
             plays_ids = self.params_to_int(plays)
             queryset = queryset.filter(play__id__in=plays_ids)
+
+        if date:
+            date = datetime.strptime(date, "%Y-%m-%d").date()
+            queryset = queryset.filter(show_time__date=date)
 
         return queryset
 
