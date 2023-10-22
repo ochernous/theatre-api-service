@@ -29,7 +29,7 @@ class Actor(models.Model):
 
 
 class Genre(models.Model):
-    name = models.CharField(max_length=63)
+    name = models.CharField(max_length=63, unique=True)
 
     def __str__(self):
         return self.name
@@ -40,6 +40,9 @@ class Play(models.Model):
     description = models.TextField()
     actors = models.ManyToManyField(Actor, related_name="plays")
     genres = models.ManyToManyField(Genre, related_name="plays")
+
+    class Meta:
+        ordering = ["title", ]
 
     def __str__(self):
         return self.title
