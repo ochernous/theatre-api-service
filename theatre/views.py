@@ -1,5 +1,6 @@
 from datetime import datetime
 
+from django.db.models import F, Count
 from rest_framework import viewsets
 
 from theatre.models import (
@@ -82,7 +83,16 @@ class PlayViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
 
 
 class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
-    queryset = Performance.objects.all()
+    queryset = (
+        Performance.objects.all()
+        .select_related("theatre_hall", "play")
+        .annotate(
+            tickets_available=(
+                F("theatre_hall__rows") * F("theatre_hall__seats_in_row")
+                - Count("tickets")
+            )
+        )
+    )
     serializer_class = PerformanceSerializer
 
     def get_queryset(self):
