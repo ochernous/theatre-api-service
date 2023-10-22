@@ -62,11 +62,6 @@ class PerformanceListSerializer(PerformanceSerializer):
         fields = ("id", "show_time", "play_title", "theatre_hall_name", "theatre_hall_capacity")
 
 
-class PerformanceDetailSerializer(PerformanceSerializer):
-    play = PlayListSerializer(many=False, read_only=True)
-    theatre_hall = TheatreHallSerializer(many=False, read_only=True)
-
-
 class TicketSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ticket
@@ -77,6 +72,22 @@ class TicketSerializer(serializers.ModelSerializer):
         Ticket.validate_seat_and_row(attrs["seat"], attrs["row"], attrs["performance"], serializers.ValidationError)
 
         return data
+
+
+class TicketSeatSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Ticket
+        fields = ("row", "seat")
+
+
+class PerformanceDetailSerializer(PerformanceSerializer):
+    play = PlayListSerializer(many=False, read_only=True)
+    theatre_hall = TheatreHallSerializer(many=False, read_only=True)
+    taken_seats = TicketSeatSerializer(source="tickets", many=True, read_only=True)
+
+    class Meta:
+        model = Performance
+        fields = ("id", "show_time", "play", "theatre_hall", "taken_seats")
 
 
 class ReservationSerializer(serializers.ModelSerializer):
