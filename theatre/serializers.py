@@ -81,6 +81,10 @@ class TicketSeatSerializer(serializers.ModelSerializer):
         fields = ("row", "seat")
 
 
+class TickerListSerializer(TicketSerializer):
+    performance = PerformanceListSerializer(many=False, read_only=True)
+
+
 class PerformanceDetailSerializer(PerformanceSerializer):
     play = PlayListSerializer(many=False, read_only=True)
     theatre_hall = TheatreHallSerializer(many=False, read_only=True)
@@ -107,3 +111,7 @@ class ReservationSerializer(serializers.ModelSerializer):
                 Ticket.objects.create(reservation=reservation, **ticket_data)
 
             return reservation
+
+
+class ReservationListSerializer(ReservationSerializer):
+    tickets = TickerListSerializer(many=True, read_only=True)
