@@ -40,17 +40,25 @@ class GenreViewSet(viewsets.ModelViewSet):
     serializer_class = GenreSerializer
 
 
-class PlayViewSet(viewsets.ModelViewSet):
+class ParamsToIntMixin:
+    @staticmethod
+    def params_to_int(qs) -> list:
+        return [int(str_id) for str_id in qs.split(",")]
+
+
+class PlayViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
     queryset = Play.objects.all()
     serializer_class = PlaySerializer
 
     def get_queryset(self):
-        queryset = self.queryset
+        queryset = self.queryset.prefetch_related("actors", "genres")
+        actors = self.request.query_params.get("actors", "")
 
-        if self.action in ("list", "retrieve"):
-            return queryset.prefetch_related("actors", "genres")
+        if actors:
+            actors_ids = self.params_to_int(actors)
+            queryset = queryset.filter(actors__id__in=actors_ids)
 
-        return queryset
+        return queryset.distinct()
 
     def get_serializer_class(self):
         if self.action == "list":
