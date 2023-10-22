@@ -25,6 +25,12 @@ from theatre.serializers import (
 )
 
 
+class ParamsToIntMixin:
+    @staticmethod
+    def params_to_int(qs) -> list:
+        return [int(str_id) for str_id in qs.split(",")]
+
+
 class TheatreHallViewSet(viewsets.ModelViewSet):
     queryset = TheatreHall.objects.all()
     serializer_class = TheatreHallSerializer
@@ -38,12 +44,6 @@ class ActorViewSet(viewsets.ModelViewSet):
 class GenreViewSet(viewsets.ModelViewSet):
     queryset = Genre.objects.all()
     serializer_class = GenreSerializer
-
-
-class ParamsToIntMixin:
-    @staticmethod
-    def params_to_int(qs) -> list:
-        return [int(str_id) for str_id in qs.split(",")]
 
 
 class PlayViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
@@ -79,15 +79,20 @@ class PlayViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
         return self.serializer_class
 
 
-class PerformanceViewSet(viewsets.ModelViewSet):
+class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
     queryset = Performance.objects.all()
     serializer_class = PerformanceSerializer
 
     def get_queryset(self):
         queryset = self.queryset
+        plays = self.request.query_params.get("plays", "")
 
         if self.action in ("list", "retrieve"):
-            return queryset.select_related("theatre_hall", "play")
+            queryset = queryset.select_related("theatre_hall", "play")
+
+        if plays:
+            plays_ids = self.params_to_int(plays)
+            queryset = queryset.filter(play__id__in=plays_ids)
 
         return queryset
 
