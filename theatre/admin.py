@@ -7,7 +7,7 @@ from theatre.models import (
     Play,
     Performance,
     Reservation,
-    Ticket
+    Ticket,
 )
 
 
@@ -18,7 +18,7 @@ class TicketInline(admin.TabularInline):
 
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
-    inlines = (TicketInline, )
+    inlines = (TicketInline,)
 
 
 admin.site.register(TheatreHall)

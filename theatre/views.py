@@ -22,14 +22,14 @@ from theatre.serializers import (
     ActorSerializer,
     GenreSerializer,
     PlaySerializer,
-    PerformanceSerializer,
-    ReservationSerializer,
-    PerformanceListSerializer,
     PlayListSerializer,
     PlayDetailSerializer,
-    PerformanceDetailSerializer,
-    ReservationListSerializer,
     PlayImageSerializer,
+    PerformanceSerializer,
+    PerformanceListSerializer,
+    PerformanceDetailSerializer,
+    ReservationSerializer,
+    ReservationListSerializer,
 )
 
 
@@ -178,7 +178,10 @@ class ReservationViewSet(
         queryset = self.queryset.filter(user=self.request.user)
 
         if self.action == "list":
-            queryset = queryset.prefetch_related("tickets__performance__theatre_hall", "tickets__performance__play")
+            queryset = queryset.prefetch_related(
+                "tickets__performance__theatre_hall",
+                "tickets__performance__play"
+            )
 
         return queryset
 
