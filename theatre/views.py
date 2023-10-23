@@ -12,6 +12,7 @@ from theatre.models import (
     Reservation,
     Ticket,
 )
+from theatre.permissions import IsAdminOrReadOnly
 
 from theatre.serializers import (
     TheatreHallSerializer,
@@ -38,6 +39,7 @@ class ParamsToIntMixin:
 class TheatreHallViewSet(viewsets.ModelViewSet):
     queryset = TheatreHall.objects.all()
     serializer_class = TheatreHallSerializer
+    permission_classes = (IsAdminOrReadOnly, )
 
 
 class ActorViewSet(viewsets.ModelViewSet):
