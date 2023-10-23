@@ -2,6 +2,7 @@ from datetime import datetime
 
 from django.db.models import F, Count
 from rest_framework import viewsets
+from rest_framework.permissions import IsAuthenticated
 
 from theatre.models import (
     TheatreHall,
@@ -10,7 +11,6 @@ from theatre.models import (
     Play,
     Performance,
     Reservation,
-    Ticket,
 )
 from theatre.permissions import IsAdminOrReadOnly
 
@@ -21,7 +21,6 @@ from theatre.serializers import (
     PlaySerializer,
     PerformanceSerializer,
     ReservationSerializer,
-    TicketSerializer,
     PerformanceListSerializer,
     PlayListSerializer,
     PlayDetailSerializer,
@@ -45,16 +44,19 @@ class TheatreHallViewSet(viewsets.ModelViewSet):
 class ActorViewSet(viewsets.ModelViewSet):
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
+    permission_classes = (IsAdminOrReadOnly, )
 
 
 class GenreViewSet(viewsets.ModelViewSet):
     queryset = Genre.objects.all()
     serializer_class = GenreSerializer
+    permission_classes = (IsAdminOrReadOnly, )
 
 
 class PlayViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
     queryset = Play.objects.all()
     serializer_class = PlaySerializer
+    permission_classes = (IsAdminOrReadOnly, )
 
     def get_queryset(self):
         queryset = self.queryset.prefetch_related("actors", "genres")
@@ -97,6 +99,7 @@ class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
         ).order_by("show_time")
     )
     serializer_class = PerformanceSerializer
+    permission_classes = (IsAdminOrReadOnly, )
 
     def get_queryset(self):
         queryset = self.queryset
@@ -126,6 +129,7 @@ class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
 class ReservationViewSet(viewsets.ModelViewSet):
     queryset = Reservation.objects.all()
     serializer_class = ReservationSerializer
+    permission_classes = (IsAuthenticated, )
 
     def get_queryset(self):
         queryset = self.queryset.filter(user=self.request.user)
@@ -143,8 +147,3 @@ class ReservationViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
-
-
-class TicketViewSet(viewsets.ModelViewSet):
-    queryset = Ticket.objects.all()
-    serializer_class = TicketSerializer
