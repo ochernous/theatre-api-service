@@ -37,6 +37,7 @@ from theatre.serializers import (
 class ParamsToIntMixin:
     @staticmethod
     def params_to_int(qs) -> list:
+        """Converts a list of string ids to a list of integers"""
         return [int(str_id) for str_id in qs.split(",")]
 
 
@@ -85,6 +86,7 @@ class PlayViewSet(
     permission_classes = (IsAdminOrReadOnly, )
 
     def get_queryset(self):
+        """Retrieve plays with filters"""
         queryset = self.queryset.prefetch_related("actors", "genres")
         actors = self.request.query_params.get("actors", "")
         genres = self.request.query_params.get("genres", "")
@@ -163,6 +165,7 @@ class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
     permission_classes = (IsAdminOrReadOnly, )
 
     def get_queryset(self):
+        """Retrieve performances with filters"""
         queryset = self.queryset
         plays = self.request.query_params.get("plays", "")
         date = self.request.query_params.get("date", "")
@@ -215,6 +218,7 @@ class ReservationViewSet(
     permission_classes = (IsAuthenticated, )
 
     def get_queryset(self):
+        """Retrieve reservations by the current user"""
         queryset = self.queryset.filter(user=self.request.user)
 
         if self.action == "list":
@@ -232,4 +236,5 @@ class ReservationViewSet(
         return self.serializer_class
 
     def perform_create(self, serializer):
+        """Save reservation and associates it with the current user"""
         serializer.save(user=self.request.user)
