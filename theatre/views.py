@@ -1,6 +1,7 @@
 from datetime import datetime
 
 from django.db.models import F, Count
+from drf_spectacular.utils import extend_schema, OpenApiParameter
 from rest_framework import viewsets, status, mixins
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
@@ -124,6 +125,28 @@ class PlayViewSet(
 
         return Response(serializer.data, status=status.HTTP_200_OK)
 
+    @extend_schema(
+        parameters=[
+            OpenApiParameter(
+                "actors",
+                type={"type": "list", "items": {"type": "number"}},
+                description="Filter by actors ids (ex. ?actors=2,4)"
+            ),
+            OpenApiParameter(
+                "genres",
+                type={"type": "list", "items": {"type": "number"}},
+                description="Filter by genres ids (ex. ?genres=2,4)"
+            ),
+            OpenApiParameter(
+                "title",
+                type={"type": "text"},
+                description="Filter by title (ex. ?title=hamlet)"
+            )
+        ]
+    )
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+
 
 class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
     queryset = (
@@ -162,6 +185,23 @@ class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
             return PerformanceDetailSerializer
 
         return self.serializer_class
+
+    @extend_schema(
+        parameters=[
+            OpenApiParameter(
+                "date",
+                type={"type": "date"},
+                description="Filter by date (ex. ?date=2023-11-11)"
+            ),
+            OpenApiParameter(
+                "plays",
+                type={"type": "list", "items": {"type": "number"}},
+                description="Filter by plays ids (ex. ?plays=2,4)"
+            )
+        ]
+    )
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
 
 
 class ReservationViewSet(
