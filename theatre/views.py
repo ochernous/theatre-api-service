@@ -1,10 +1,11 @@
 from datetime import datetime
 
 from django.db.models import F, Count
-from rest_framework import viewsets, status
+from rest_framework import viewsets, status, mixins
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from rest_framework.viewsets import GenericViewSet
 
 from theatre.models import (
     TheatreHall,
@@ -38,25 +39,46 @@ class ParamsToIntMixin:
         return [int(str_id) for str_id in qs.split(",")]
 
 
-class TheatreHallViewSet(viewsets.ModelViewSet):
+class TheatreHallViewSet(
+    mixins.CreateModelMixin,
+    mixins.ListModelMixin,
+    mixins.RetrieveModelMixin,
+    GenericViewSet
+):
     queryset = TheatreHall.objects.all()
     serializer_class = TheatreHallSerializer
     permission_classes = (IsAdminOrReadOnly, )
 
 
-class ActorViewSet(viewsets.ModelViewSet):
+class ActorViewSet(
+    mixins.CreateModelMixin,
+    mixins.ListModelMixin,
+    mixins.RetrieveModelMixin,
+    GenericViewSet
+):
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
     permission_classes = (IsAdminOrReadOnly, )
 
 
-class GenreViewSet(viewsets.ModelViewSet):
+class GenreViewSet(
+    mixins.CreateModelMixin,
+    mixins.ListModelMixin,
+    mixins.RetrieveModelMixin,
+    GenericViewSet
+):
     queryset = Genre.objects.all()
     serializer_class = GenreSerializer
     permission_classes = (IsAdminOrReadOnly, )
 
 
-class PlayViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
+class PlayViewSet(
+    ParamsToIntMixin,
+    mixins.CreateModelMixin,
+    mixins.ListModelMixin,
+    mixins.RetrieveModelMixin,
+    GenericViewSet
+):
     queryset = Play.objects.all()
     serializer_class = PlaySerializer
     permission_classes = (IsAdminOrReadOnly, )
@@ -142,7 +164,12 @@ class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
         return self.serializer_class
 
 
-class ReservationViewSet(viewsets.ModelViewSet):
+class ReservationViewSet(
+    mixins.CreateModelMixin,
+    mixins.ListModelMixin,
+    mixins.RetrieveModelMixin,
+    GenericViewSet
+):
     queryset = Reservation.objects.all()
     serializer_class = ReservationSerializer
     permission_classes = (IsAuthenticated, )
