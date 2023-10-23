@@ -109,6 +109,10 @@ class Ticket(models.Model):
             performance,
             error_to_raise
     ):
+        """
+        Validates the seat and row numbers are within the
+        valid range of seats and rows in the theatre hall
+        """
         for (
                 ticket_attr_value,
                 ticket_attr_name,
