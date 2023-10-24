@@ -35,6 +35,7 @@ def sample_actor(**params):
 
     return Actor.objects.create(**defaults)
 
+
 def detail_url(play_id):
     return reverse("theatre:play-detail", args=[play_id])
 
@@ -156,7 +157,8 @@ class AdminPlayApiTests(TestCase):
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         for key in payload:
             if key in ["actors", "genres"]:
-                self.assertCountEqual(payload[key], getattr(play, key).values_list('id', flat=True))
+                self.assertCountEqual(payload[key], getattr(play, key)
+                                      .values_list('id', flat=True))
             else:
                 self.assertEqual(payload[key], getattr(play, key))
 
@@ -183,7 +185,8 @@ class AdminPlayApiTests(TestCase):
 
         for key in payload:
             if key in ["actors", "genres"]:
-                self.assertCountEqual(payload[key], getattr(play, key).values_list('id', flat=True))
+                self.assertCountEqual(payload[key], getattr(play, key)
+                                      .values_list('id', flat=True))
             else:
                 self.assertEqual(payload[key], getattr(play, key))
 
