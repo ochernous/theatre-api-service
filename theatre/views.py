@@ -4,6 +4,7 @@ from django.db.models import F, Count
 from drf_spectacular.utils import extend_schema, OpenApiParameter
 from rest_framework import viewsets, status, mixins
 from rest_framework.decorators import action
+from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
@@ -207,6 +208,11 @@ class PerformanceViewSet(ParamsToIntMixin, viewsets.ModelViewSet):
         return super().list(request, *args, **kwargs)
 
 
+class ReservationPagination(PageNumberPagination):
+    page_size = 5
+    max_page_size = 100
+
+
 class ReservationViewSet(
     mixins.CreateModelMixin,
     mixins.ListModelMixin,
@@ -216,6 +222,7 @@ class ReservationViewSet(
     queryset = Reservation.objects.all()
     serializer_class = ReservationSerializer
     permission_classes = (IsAuthenticated, )
+    pagination_class = ReservationPagination
 
     def get_queryset(self):
         """Retrieve reservations by the current user"""
