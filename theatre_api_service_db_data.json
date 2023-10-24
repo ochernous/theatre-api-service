@@ -1,0 +1,2909 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-10-22T10:28:04.919Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "A Midsummer Night's Dream",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-10-22T10:29:37.954Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "The Importance of Being Earnest",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-10-22T10:33:59.675Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Hamlet",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-10-22T10:36:09.802Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Death of a Salesman",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-10-22T10:37:30.875Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "A Streetcar Named Desire",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-10-22T10:39:23.388Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "The Crucible",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-10-22T10:41:13.947Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "The Phantom of the Opera",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-10-22T10:45:55.060Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Wicked",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-10-22T10:49:12.363Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "A Midsummer Night's Dream 2023-11-04 18:00:00+01:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-10-22T10:49:37.052Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "The Importance of Being Earnest 2023-11-03 18:00:00+01:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-10-22T10:50:04.646Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Hamlet 2023-11-10 18:00:00+01:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-10-22T10:50:30.016Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Death of a Salesman 2023-11-11 18:00:00+01:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-10-22T10:51:24.208Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "A Streetcar Named Desire 2023-11-03 21:00:00+01:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-10-22T10:52:26.122Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "The Crucible 2023-11-04 21:00:00+01:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-10-22T10:53:02.184Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "The Phantom of the Opera 2023-11-10 21:00:00+01:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-10-22T10:53:18.627Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "8",
+    "object_repr": "Wicked 2023-11-11 21:00:00+01:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-10-22T12:03:28.999Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "2023-10-22 12:03:28.996086+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"A Midsummer Night's Dream 2023-11-04 17:00:00+00:00 (row: 1, seat: 1)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"A Midsummer Night's Dream 2023-11-04 17:00:00+00:00 (row: 1, seat: 2)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-10-22T12:54:04.160Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "A Streetcar Named Desire 2023-11-03 21:00:00+01:00",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Theatre hall\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-10-22T12:54:17.217Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "A Midsummer Night's Dream 2023-11-04 18:00:00+01:00",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Theatre hall\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-10-22T13:38:27.433Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Hamlet",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Genres\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-10-22T13:38:36.559Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Death of a Salesman",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Genres\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-10-22T14:58:07.845Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "2023-10-22 14:58:07.835145+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"ticket\", \"object\": \"The Crucible 2023-11-04 20:00:00+00:00 (row: 1, seat: 1)\"}}, {\"added\": {\"name\": \"ticket\", \"object\": \"The Crucible 2023-11-04 20:00:00+00:00 (row: 1, seat: 2)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-10-22T14:58:32.998Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "test.user",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-10-22T15:00:05.240Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "test.user",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Superuser status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-10-22T20:27:45.078Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "9",
+    "object_repr": "Hamlet 2023-11-25 18:00:00+01:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-10-23T17:05:04.354Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "A Midsummer Night's Dream",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-10-23T17:05:41.528Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "A Streetcar Named Desire",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-10-23T17:05:58.224Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Death of a Salesman",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-10-23T17:06:15.436Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Hamlet",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-10-23T17:06:33.745Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "The Crucible",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-10-23T17:06:48.860Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "The Importance of Being Earnest",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-10-23T17:07:02.163Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "The Phantom of the Opera",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2023-10-23T17:07:16.973Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Wicked",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2023-10-24T07:09:11.618Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "testuser1@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2023-10-24T07:09:21.966Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "testuser2@gmail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2023-10-24T07:09:29.400Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "testuser3@mail.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add theatre hall",
+    "content_type": 6,
+    "codename": "add_theatrehall"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change theatre hall",
+    "content_type": 6,
+    "codename": "change_theatrehall"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete theatre hall",
+    "content_type": 6,
+    "codename": "delete_theatrehall"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view theatre hall",
+    "content_type": 6,
+    "codename": "view_theatrehall"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 7,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 7,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 7,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 7,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add actor",
+    "content_type": 8,
+    "codename": "add_actor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change actor",
+    "content_type": 8,
+    "codename": "change_actor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete actor",
+    "content_type": 8,
+    "codename": "delete_actor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view actor",
+    "content_type": 8,
+    "codename": "view_actor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add genre",
+    "content_type": 9,
+    "codename": "add_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change genre",
+    "content_type": 9,
+    "codename": "change_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete genre",
+    "content_type": 9,
+    "codename": "delete_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view genre",
+    "content_type": 9,
+    "codename": "view_genre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add play",
+    "content_type": 10,
+    "codename": "add_play"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change play",
+    "content_type": 10,
+    "codename": "change_play"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete play",
+    "content_type": 10,
+    "codename": "delete_play"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view play",
+    "content_type": 10,
+    "codename": "view_play"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add performance",
+    "content_type": 11,
+    "codename": "add_performance"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change performance",
+    "content_type": 11,
+    "codename": "change_performance"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete performance",
+    "content_type": 11,
+    "codename": "delete_performance"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view performance",
+    "content_type": 11,
+    "codename": "view_performance"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add reservation",
+    "content_type": 12,
+    "codename": "add_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change reservation",
+    "content_type": 12,
+    "codename": "change_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete reservation",
+    "content_type": 12,
+    "codename": "delete_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view reservation",
+    "content_type": 12,
+    "codename": "view_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add ticket",
+    "content_type": 13,
+    "codename": "add_ticket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change ticket",
+    "content_type": 13,
+    "codename": "change_ticket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete ticket",
+    "content_type": 13,
+    "codename": "delete_ticket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view ticket",
+    "content_type": 13,
+    "codename": "view_ticket"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "theatre",
+    "model": "theatrehall"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "user",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "theatre",
+    "model": "actor"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "theatre",
+    "model": "genre"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "theatre",
+    "model": "play"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "theatre",
+    "model": "performance"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "theatre",
+    "model": "reservation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "theatre",
+    "model": "ticket"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5kzbu1rfbbomv9bp0555dh371vk0m4rr",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-rm1Kes4QbXbXJIASKU4qxN0hUgpo38y8l-pwW4dua7J0I6uzsur0u_VID5l2wHecbrOmeVqXsde7og_a9HVmeV4O9-9gwDZ8a0M2FQmQAAr0GGMgcdVl5kTsqzNciBlq8bFKyRwzWQPoMUrw4Ix6fwDlpDfo:1quZzw:em9KxFDXToNA0YxYlWc32js5qzUTcgBMJrjaoNI6bXY",
+    "expire_date": "2023-11-05T15:04:12.825Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pomos390tqfj3lsk105e3xu7buktf2zj",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-rm1Kes4QbXbXJIASKU4qxN0hUgpo38y8l-pwW4dua7J0I6uzsur0u_VID5l2wHecbrOmeVqXsde7og_a9HVmeV4O9-9gwDZ8a0M2FQmQAAr0GGMgcdVl5kTsqzNciBlq8bFKyRwzWQPoMUrw4Ix6fwDlpDfo:1quz6s:O4WLQXfBSSnsYd-iiPAYI9CYH7i8M47bc07WUNCKODI",
+    "expire_date": "2023-11-06T17:53:02.162Z"
+  }
+},
+{
+  "model": "theatre.theatrehall",
+  "pk": 1,
+  "fields": {
+    "name": "The Phoenix",
+    "rows": 25,
+    "seats_in_row": 20
+  }
+},
+{
+  "model": "theatre.theatrehall",
+  "pk": 2,
+  "fields": {
+    "name": "The Cascade",
+    "rows": 15,
+    "seats_in_row": 22
+  }
+},
+{
+  "model": "theatre.theatrehall",
+  "pk": 3,
+  "fields": {
+    "name": "The Harmony",
+    "rows": 15,
+    "seats_in_row": 15
+  }
+},
+{
+  "model": "theatre.theatrehall",
+  "pk": 4,
+  "fields": {
+    "name": "The Coliseum",
+    "rows": 25,
+    "seats_in_row": 25
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 2,
+  "fields": {
+    "first_name": "Ian",
+    "last_name": "McKellen"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 3,
+  "fields": {
+    "first_name": "Meryl",
+    "last_name": "Mirren"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 4,
+  "fields": {
+    "first_name": "James",
+    "last_name": "Jones"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 5,
+  "fields": {
+    "first_name": "Helen",
+    "last_name": "Dench"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 6,
+  "fields": {
+    "first_name": "Patrick",
+    "last_name": "Davis"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 7,
+  "fields": {
+    "first_name": "Viola",
+    "last_name": "Stewart"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 8,
+  "fields": {
+    "first_name": "Angela",
+    "last_name": "Smith"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 9,
+  "fields": {
+    "first_name": "Christopher",
+    "last_name": "Lansbury"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 10,
+  "fields": {
+    "first_name": "Edward",
+    "last_name": "Plummer"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 11,
+  "fields": {
+    "first_name": "Mark",
+    "last_name": "de Jong"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 12,
+  "fields": {
+    "first_name": "Bryan",
+    "last_name": "Holm"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 13,
+  "fields": {
+    "first_name": "Glenda",
+    "last_name": "Redgrave"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 14,
+  "fields": {
+    "first_name": "Fiona",
+    "last_name": "Wade"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 15,
+  "fields": {
+    "first_name": "Rajon",
+    "last_name": "Stockton"
+  }
+},
+{
+  "model": "theatre.actor",
+  "pk": 16,
+  "fields": {
+    "first_name": "Anna",
+    "last_name": "Wilson"
+  }
+},
+{
+  "model": "theatre.genre",
+  "pk": 2,
+  "fields": {
+    "name": "comedy"
+  }
+},
+{
+  "model": "theatre.genre",
+  "pk": 3,
+  "fields": {
+    "name": "tragedy"
+  }
+},
+{
+  "model": "theatre.genre",
+  "pk": 4,
+  "fields": {
+    "name": "drama"
+  }
+},
+{
+  "model": "theatre.genre",
+  "pk": 5,
+  "fields": {
+    "name": "musical"
+  }
+},
+{
+  "model": "theatre.play",
+  "pk": 1,
+  "fields": {
+    "title": "A Midsummer Night's Dream",
+    "description": "A Midsummer Night's Dream is a romantic comedy written by William Shakespeare in about 1595 or 1596. The play is set in Athens, and consists of several subplots that revolve around the marriage of Theseus and Hippolyta.",
+    "image": "upload/plays/a-midsummer-nights-dream-3c3c5709-fb1b-47d6-bd7a-c20bb16c3c5c.jpg",
+    "actors": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "genres": [
+      2
+    ]
+  }
+},
+{
+  "model": "theatre.play",
+  "pk": 2,
+  "fields": {
+    "title": "The Importance of Being Earnest",
+    "description": "The Importance of Being Earnest is a farcical comedy by Oscar Wilde that was first performed in 1895. It is a witty and satirical play that mocks the social conventions of Victorian England, particularly the emphasis on social class and marriage.",
+    "image": "upload/plays/the-importance-of-being-earnest-5c692bf4-54b4-4189-bc65-c5b23bbe7796.jpg",
+    "actors": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "genres": [
+      2
+    ]
+  }
+},
+{
+  "model": "theatre.play",
+  "pk": 3,
+  "fields": {
+    "title": "Hamlet",
+    "description": "Hamlet is a play by William Shakespeare, believed to have been written between 1599 and 1601.  The play tells the story of Prince Hamlet of Denmark, who is consumed by grief and anger after the death of his father, King Hamlet.",
+    "image": "upload/plays/hamlet-b73bc978-b4dc-406e-ad38-64f2654ddf83.jpg",
+    "actors": [
+      2,
+      3,
+      5,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "genres": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "theatre.play",
+  "pk": 4,
+  "fields": {
+    "title": "Death of a Salesman",
+    "description": "Death of a Salesman is a tragedy by Arthur Miller. It tells the story of Willy Loman, a salesman who has lost his job and his grip on reality. He is struggling to support his family and his dreams of success are fading.",
+    "image": "upload/plays/death-of-a-salesman-ff777945-0cdd-42ee-b050-4dfc42f01b85.jpg",
+    "actors": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "genres": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "theatre.play",
+  "pk": 5,
+  "fields": {
+    "title": "A Streetcar Named Desire",
+    "description": "A tragic drama about the clash of two worlds: the fading Southern gentility of Blanche DuBois and the raw vitality of her brutish brother-in-law, Stanley Kowalski.",
+    "image": "upload/plays/a-streetcar-named-desire-b3c36098-eae1-4102-8909-d1c3087d0cf3.jpg",
+    "actors": [
+      2,
+      4,
+      7,
+      8,
+      11,
+      13,
+      15
+    ],
+    "genres": [
+      4
+    ]
+  }
+},
+{
+  "model": "theatre.play",
+  "pk": 6,
+  "fields": {
+    "title": "The Crucible",
+    "description": "The Crucible is a four-act tragedy by Arthur Miller, based on the Salem witch trials of 1692. In the Puritan town of Salem, Massachusetts, a group of young girls accuses several members of the community of witchcraft, setting off a chain of events that leads to mass hysteria and injustice.",
+    "image": "upload/plays/the-crucible-f0f048b3-87c6-4ffc-9540-65367f60480c.jpg",
+    "actors": [
+      3,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11,
+      13,
+      14,
+      15
+    ],
+    "genres": [
+      4
+    ]
+  }
+},
+{
+  "model": "theatre.play",
+  "pk": 7,
+  "fields": {
+    "title": "The Phantom of the Opera",
+    "description": "It is based on the 1910 French novel of the same name by Gaston Leroux. The story tells of a beautiful soprano, Christine Daaé, who becomes the obsession of a mysterious, masked musical genius living in the subterranean labyrinth beneath the Paris Opéra House. The Phantom falls madly in love with Christine and tutors her in singing, helping her to become the star of the opera.",
+    "image": "upload/plays/the-phantom-of-the-opera-8cba71a1-7a93-4342-9f21-f13ed5be33b5.jpg",
+    "actors": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "genres": [
+      5
+    ]
+  }
+},
+{
+  "model": "theatre.play",
+  "pk": 8,
+  "fields": {
+    "title": "Wicked",
+    "description": "The musical tells the story of Elphaba, the Wicked Witch of the West, and Glinda the Good Witch, from their days as students at Shiz University to their eventual rivalry. It explores the themes of friendship, loyalty, and courage, and challenges the traditional view of Elphaba as a villain.",
+    "image": "upload/plays/wicked-2576b50a-3393-4228-8687-b559f67488aa.jpg",
+    "actors": [
+      3,
+      5,
+      7,
+      11,
+      12,
+      15
+    ],
+    "genres": [
+      5
+    ]
+  }
+},
+{
+  "model": "theatre.performance",
+  "pk": 1,
+  "fields": {
+    "show_time": "2023-11-04T17:00:00Z",
+    "play": 1,
+    "theatre_hall": 3
+  }
+},
+{
+  "model": "theatre.performance",
+  "pk": 2,
+  "fields": {
+    "show_time": "2023-11-03T17:00:00Z",
+    "play": 2,
+    "theatre_hall": 3
+  }
+},
+{
+  "model": "theatre.performance",
+  "pk": 3,
+  "fields": {
+    "show_time": "2023-11-10T17:00:00Z",
+    "play": 3,
+    "theatre_hall": 1
+  }
+},
+{
+  "model": "theatre.performance",
+  "pk": 4,
+  "fields": {
+    "show_time": "2023-11-11T17:00:00Z",
+    "play": 4,
+    "theatre_hall": 4
+  }
+},
+{
+  "model": "theatre.performance",
+  "pk": 5,
+  "fields": {
+    "show_time": "2023-11-03T20:00:00Z",
+    "play": 5,
+    "theatre_hall": 2
+  }
+},
+{
+  "model": "theatre.performance",
+  "pk": 6,
+  "fields": {
+    "show_time": "2023-11-04T20:00:00Z",
+    "play": 6,
+    "theatre_hall": 2
+  }
+},
+{
+  "model": "theatre.performance",
+  "pk": 7,
+  "fields": {
+    "show_time": "2023-11-10T20:00:00Z",
+    "play": 7,
+    "theatre_hall": 4
+  }
+},
+{
+  "model": "theatre.performance",
+  "pk": 8,
+  "fields": {
+    "show_time": "2023-11-11T20:00:00Z",
+    "play": 8,
+    "theatre_hall": 1
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 1,
+  "fields": {
+    "created_at": "2023-10-22T12:03:28.996Z",
+    "user": 1
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 2,
+  "fields": {
+    "created_at": "2023-10-22T14:58:07.835Z",
+    "user": 1
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 7,
+  "fields": {
+    "created_at": "2023-10-22T15:34:04.611Z",
+    "user": 1
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 9,
+  "fields": {
+    "created_at": "2023-10-22T15:44:22.718Z",
+    "user": 1
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 12,
+  "fields": {
+    "created_at": "2023-10-24T07:15:21.758Z",
+    "user": 1
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 13,
+  "fields": {
+    "created_at": "2023-10-24T07:16:12.187Z",
+    "user": 1
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 14,
+  "fields": {
+    "created_at": "2023-10-24T07:17:01.513Z",
+    "user": 1
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 15,
+  "fields": {
+    "created_at": "2023-10-24T07:17:20.801Z",
+    "user": 1
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 16,
+  "fields": {
+    "created_at": "2023-10-24T07:22:49.090Z",
+    "user": 6
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 17,
+  "fields": {
+    "created_at": "2023-10-24T07:23:57.284Z",
+    "user": 6
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 18,
+  "fields": {
+    "created_at": "2023-10-24T07:24:29.746Z",
+    "user": 6
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 19,
+  "fields": {
+    "created_at": "2023-10-24T07:27:03.619Z",
+    "user": 6
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 20,
+  "fields": {
+    "created_at": "2023-10-24T07:27:30.124Z",
+    "user": 6
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 21,
+  "fields": {
+    "created_at": "2023-10-24T07:30:43.546Z",
+    "user": 7
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 22,
+  "fields": {
+    "created_at": "2023-10-24T07:31:05.596Z",
+    "user": 7
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 23,
+  "fields": {
+    "created_at": "2023-10-24T07:31:33.479Z",
+    "user": 7
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 24,
+  "fields": {
+    "created_at": "2023-10-24T07:31:57.146Z",
+    "user": 7
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 25,
+  "fields": {
+    "created_at": "2023-10-24T07:32:13.620Z",
+    "user": 7
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 26,
+  "fields": {
+    "created_at": "2023-10-24T07:32:52.610Z",
+    "user": 7
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 27,
+  "fields": {
+    "created_at": "2023-10-24T07:33:10.135Z",
+    "user": 7
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 28,
+  "fields": {
+    "created_at": "2023-10-24T07:36:28.065Z",
+    "user": 8
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 29,
+  "fields": {
+    "created_at": "2023-10-24T07:36:47.131Z",
+    "user": 8
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 30,
+  "fields": {
+    "created_at": "2023-10-24T07:37:01.585Z",
+    "user": 8
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 31,
+  "fields": {
+    "created_at": "2023-10-24T07:37:18.953Z",
+    "user": 8
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 32,
+  "fields": {
+    "created_at": "2023-10-24T07:37:49.859Z",
+    "user": 8
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 33,
+  "fields": {
+    "created_at": "2023-10-24T07:38:12.897Z",
+    "user": 8
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 34,
+  "fields": {
+    "created_at": "2023-10-24T07:39:00.492Z",
+    "user": 8
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 35,
+  "fields": {
+    "created_at": "2023-10-24T07:41:43.783Z",
+    "user": 9
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 36,
+  "fields": {
+    "created_at": "2023-10-24T07:42:23.527Z",
+    "user": 9
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 37,
+  "fields": {
+    "created_at": "2023-10-24T07:43:19.997Z",
+    "user": 9
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 38,
+  "fields": {
+    "created_at": "2023-10-24T07:44:40.680Z",
+    "user": 9
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 39,
+  "fields": {
+    "created_at": "2023-10-24T07:45:16.003Z",
+    "user": 9
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 40,
+  "fields": {
+    "created_at": "2023-10-24T07:46:47.440Z",
+    "user": 9
+  }
+},
+{
+  "model": "theatre.reservation",
+  "pk": 41,
+  "fields": {
+    "created_at": "2023-10-24T07:47:02.412Z",
+    "user": 9
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 1,
+  "fields": {
+    "row": 1,
+    "seat": 1,
+    "performance": 1,
+    "reservation": 1
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 2,
+  "fields": {
+    "row": 1,
+    "seat": 2,
+    "performance": 1,
+    "reservation": 1
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 3,
+  "fields": {
+    "row": 1,
+    "seat": 1,
+    "performance": 6,
+    "reservation": 2
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 4,
+  "fields": {
+    "row": 1,
+    "seat": 2,
+    "performance": 6,
+    "reservation": 2
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 9,
+  "fields": {
+    "row": 4,
+    "seat": 1,
+    "performance": 4,
+    "reservation": 7
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 10,
+  "fields": {
+    "row": 4,
+    "seat": 2,
+    "performance": 4,
+    "reservation": 7
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 11,
+  "fields": {
+    "row": 4,
+    "seat": 1,
+    "performance": 5,
+    "reservation": 9
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 12,
+  "fields": {
+    "row": 4,
+    "seat": 2,
+    "performance": 5,
+    "reservation": 9
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 17,
+  "fields": {
+    "row": 1,
+    "seat": 1,
+    "performance": 2,
+    "reservation": 12
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 18,
+  "fields": {
+    "row": 1,
+    "seat": 2,
+    "performance": 2,
+    "reservation": 12
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 19,
+  "fields": {
+    "row": 1,
+    "seat": 3,
+    "performance": 2,
+    "reservation": 12
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 20,
+  "fields": {
+    "row": 3,
+    "seat": 5,
+    "performance": 3,
+    "reservation": 13
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 21,
+  "fields": {
+    "row": 10,
+    "seat": 1,
+    "performance": 7,
+    "reservation": 14
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 22,
+  "fields": {
+    "row": 10,
+    "seat": 2,
+    "performance": 7,
+    "reservation": 14
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 23,
+  "fields": {
+    "row": 10,
+    "seat": 3,
+    "performance": 7,
+    "reservation": 14
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 24,
+  "fields": {
+    "row": 11,
+    "seat": 1,
+    "performance": 8,
+    "reservation": 15
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 25,
+  "fields": {
+    "row": 11,
+    "seat": 2,
+    "performance": 8,
+    "reservation": 15
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 26,
+  "fields": {
+    "row": 11,
+    "seat": 3,
+    "performance": 8,
+    "reservation": 15
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 27,
+  "fields": {
+    "row": 6,
+    "seat": 1,
+    "performance": 1,
+    "reservation": 16
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 28,
+  "fields": {
+    "row": 6,
+    "seat": 2,
+    "performance": 1,
+    "reservation": 16
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 29,
+  "fields": {
+    "row": 6,
+    "seat": 1,
+    "performance": 2,
+    "reservation": 17
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 30,
+  "fields": {
+    "row": 6,
+    "seat": 2,
+    "performance": 2,
+    "reservation": 17
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 31,
+  "fields": {
+    "row": 6,
+    "seat": 1,
+    "performance": 3,
+    "reservation": 18
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 32,
+  "fields": {
+    "row": 6,
+    "seat": 2,
+    "performance": 3,
+    "reservation": 18
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 33,
+  "fields": {
+    "row": 6,
+    "seat": 3,
+    "performance": 3,
+    "reservation": 18
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 34,
+  "fields": {
+    "row": 6,
+    "seat": 1,
+    "performance": 5,
+    "reservation": 19
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 35,
+  "fields": {
+    "row": 6,
+    "seat": 2,
+    "performance": 5,
+    "reservation": 19
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 36,
+  "fields": {
+    "row": 6,
+    "seat": 3,
+    "performance": 5,
+    "reservation": 19
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 37,
+  "fields": {
+    "row": 6,
+    "seat": 4,
+    "performance": 5,
+    "reservation": 19
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 38,
+  "fields": {
+    "row": 6,
+    "seat": 1,
+    "performance": 7,
+    "reservation": 20
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 39,
+  "fields": {
+    "row": 6,
+    "seat": 2,
+    "performance": 7,
+    "reservation": 20
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 40,
+  "fields": {
+    "row": 6,
+    "seat": 3,
+    "performance": 7,
+    "reservation": 20
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 41,
+  "fields": {
+    "row": 6,
+    "seat": 4,
+    "performance": 7,
+    "reservation": 20
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 42,
+  "fields": {
+    "row": 7,
+    "seat": 1,
+    "performance": 2,
+    "reservation": 21
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 43,
+  "fields": {
+    "row": 7,
+    "seat": 2,
+    "performance": 2,
+    "reservation": 21
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 44,
+  "fields": {
+    "row": 7,
+    "seat": 3,
+    "performance": 2,
+    "reservation": 21
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 45,
+  "fields": {
+    "row": 7,
+    "seat": 4,
+    "performance": 2,
+    "reservation": 21
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 46,
+  "fields": {
+    "row": 7,
+    "seat": 1,
+    "performance": 3,
+    "reservation": 22
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 47,
+  "fields": {
+    "row": 7,
+    "seat": 2,
+    "performance": 3,
+    "reservation": 22
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 48,
+  "fields": {
+    "row": 7,
+    "seat": 3,
+    "performance": 3,
+    "reservation": 22
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 49,
+  "fields": {
+    "row": 7,
+    "seat": 4,
+    "performance": 3,
+    "reservation": 22
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 50,
+  "fields": {
+    "row": 7,
+    "seat": 1,
+    "performance": 4,
+    "reservation": 23
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 51,
+  "fields": {
+    "row": 7,
+    "seat": 2,
+    "performance": 4,
+    "reservation": 23
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 52,
+  "fields": {
+    "row": 7,
+    "seat": 3,
+    "performance": 4,
+    "reservation": 23
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 53,
+  "fields": {
+    "row": 7,
+    "seat": 4,
+    "performance": 5,
+    "reservation": 24
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 54,
+  "fields": {
+    "row": 7,
+    "seat": 3,
+    "performance": 6,
+    "reservation": 25
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 55,
+  "fields": {
+    "row": 7,
+    "seat": 4,
+    "performance": 6,
+    "reservation": 25
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 56,
+  "fields": {
+    "row": 7,
+    "seat": 11,
+    "performance": 7,
+    "reservation": 26
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 57,
+  "fields": {
+    "row": 7,
+    "seat": 12,
+    "performance": 7,
+    "reservation": 26
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 58,
+  "fields": {
+    "row": 7,
+    "seat": 13,
+    "performance": 7,
+    "reservation": 26
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 59,
+  "fields": {
+    "row": 7,
+    "seat": 14,
+    "performance": 7,
+    "reservation": 26
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 60,
+  "fields": {
+    "row": 7,
+    "seat": 4,
+    "performance": 8,
+    "reservation": 27
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 61,
+  "fields": {
+    "row": 8,
+    "seat": 1,
+    "performance": 2,
+    "reservation": 28
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 62,
+  "fields": {
+    "row": 8,
+    "seat": 2,
+    "performance": 2,
+    "reservation": 28
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 63,
+  "fields": {
+    "row": 8,
+    "seat": 3,
+    "performance": 2,
+    "reservation": 28
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 64,
+  "fields": {
+    "row": 8,
+    "seat": 4,
+    "performance": 2,
+    "reservation": 28
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 65,
+  "fields": {
+    "row": 8,
+    "seat": 1,
+    "performance": 4,
+    "reservation": 29
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 66,
+  "fields": {
+    "row": 8,
+    "seat": 2,
+    "performance": 4,
+    "reservation": 29
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 67,
+  "fields": {
+    "row": 8,
+    "seat": 3,
+    "performance": 4,
+    "reservation": 29
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 68,
+  "fields": {
+    "row": 8,
+    "seat": 4,
+    "performance": 4,
+    "reservation": 29
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 69,
+  "fields": {
+    "row": 8,
+    "seat": 1,
+    "performance": 6,
+    "reservation": 30
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 70,
+  "fields": {
+    "row": 8,
+    "seat": 2,
+    "performance": 6,
+    "reservation": 30
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 71,
+  "fields": {
+    "row": 8,
+    "seat": 3,
+    "performance": 6,
+    "reservation": 30
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 72,
+  "fields": {
+    "row": 8,
+    "seat": 4,
+    "performance": 6,
+    "reservation": 30
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 73,
+  "fields": {
+    "row": 8,
+    "seat": 1,
+    "performance": 8,
+    "reservation": 31
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 74,
+  "fields": {
+    "row": 8,
+    "seat": 2,
+    "performance": 8,
+    "reservation": 31
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 75,
+  "fields": {
+    "row": 8,
+    "seat": 3,
+    "performance": 8,
+    "reservation": 31
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 76,
+  "fields": {
+    "row": 8,
+    "seat": 4,
+    "performance": 8,
+    "reservation": 31
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 77,
+  "fields": {
+    "row": 8,
+    "seat": 4,
+    "performance": 1,
+    "reservation": 32
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 78,
+  "fields": {
+    "row": 8,
+    "seat": 3,
+    "performance": 3,
+    "reservation": 33
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 79,
+  "fields": {
+    "row": 8,
+    "seat": 4,
+    "performance": 3,
+    "reservation": 33
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 80,
+  "fields": {
+    "row": 8,
+    "seat": 2,
+    "performance": 5,
+    "reservation": 34
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 81,
+  "fields": {
+    "row": 8,
+    "seat": 3,
+    "performance": 5,
+    "reservation": 34
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 82,
+  "fields": {
+    "row": 8,
+    "seat": 4,
+    "performance": 5,
+    "reservation": 34
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 83,
+  "fields": {
+    "row": 9,
+    "seat": 1,
+    "performance": 1,
+    "reservation": 35
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 84,
+  "fields": {
+    "row": 9,
+    "seat": 2,
+    "performance": 1,
+    "reservation": 35
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 85,
+  "fields": {
+    "row": 9,
+    "seat": 3,
+    "performance": 1,
+    "reservation": 35
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 86,
+  "fields": {
+    "row": 9,
+    "seat": 4,
+    "performance": 1,
+    "reservation": 35
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 87,
+  "fields": {
+    "row": 9,
+    "seat": 1,
+    "performance": 5,
+    "reservation": 36
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 88,
+  "fields": {
+    "row": 9,
+    "seat": 2,
+    "performance": 5,
+    "reservation": 36
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 89,
+  "fields": {
+    "row": 9,
+    "seat": 3,
+    "performance": 5,
+    "reservation": 36
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 90,
+  "fields": {
+    "row": 9,
+    "seat": 4,
+    "performance": 5,
+    "reservation": 36
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 91,
+  "fields": {
+    "row": 9,
+    "seat": 1,
+    "performance": 6,
+    "reservation": 37
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 92,
+  "fields": {
+    "row": 9,
+    "seat": 2,
+    "performance": 6,
+    "reservation": 37
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 93,
+  "fields": {
+    "row": 9,
+    "seat": 3,
+    "performance": 6,
+    "reservation": 37
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 94,
+  "fields": {
+    "row": 9,
+    "seat": 4,
+    "performance": 6,
+    "reservation": 37
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 95,
+  "fields": {
+    "row": 9,
+    "seat": 5,
+    "performance": 6,
+    "reservation": 37
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 96,
+  "fields": {
+    "row": 9,
+    "seat": 6,
+    "performance": 6,
+    "reservation": 37
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 97,
+  "fields": {
+    "row": 9,
+    "seat": 7,
+    "performance": 6,
+    "reservation": 37
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 98,
+  "fields": {
+    "row": 9,
+    "seat": 8,
+    "performance": 6,
+    "reservation": 37
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 99,
+  "fields": {
+    "row": 9,
+    "seat": 1,
+    "performance": 8,
+    "reservation": 38
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 100,
+  "fields": {
+    "row": 9,
+    "seat": 2,
+    "performance": 8,
+    "reservation": 38
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 101,
+  "fields": {
+    "row": 9,
+    "seat": 3,
+    "performance": 8,
+    "reservation": 38
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 102,
+  "fields": {
+    "row": 9,
+    "seat": 4,
+    "performance": 8,
+    "reservation": 38
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 103,
+  "fields": {
+    "row": 9,
+    "seat": 1,
+    "performance": 4,
+    "reservation": 39
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 104,
+  "fields": {
+    "row": 9,
+    "seat": 2,
+    "performance": 4,
+    "reservation": 39
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 105,
+  "fields": {
+    "row": 9,
+    "seat": 3,
+    "performance": 4,
+    "reservation": 39
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 106,
+  "fields": {
+    "row": 9,
+    "seat": 4,
+    "performance": 4,
+    "reservation": 39
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 107,
+  "fields": {
+    "row": 10,
+    "seat": 1,
+    "performance": 1,
+    "reservation": 40
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 108,
+  "fields": {
+    "row": 10,
+    "seat": 2,
+    "performance": 1,
+    "reservation": 40
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 109,
+  "fields": {
+    "row": 10,
+    "seat": 3,
+    "performance": 1,
+    "reservation": 40
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 110,
+  "fields": {
+    "row": 10,
+    "seat": 4,
+    "performance": 1,
+    "reservation": 40
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 111,
+  "fields": {
+    "row": 10,
+    "seat": 1,
+    "performance": 3,
+    "reservation": 41
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 112,
+  "fields": {
+    "row": 10,
+    "seat": 2,
+    "performance": 3,
+    "reservation": 41
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 113,
+  "fields": {
+    "row": 10,
+    "seat": 3,
+    "performance": 3,
+    "reservation": 41
+  }
+},
+{
+  "model": "theatre.ticket",
+  "pk": 114,
+  "fields": {
+    "row": 10,
+    "seat": 4,
+    "performance": 3,
+    "reservation": 41
+  }
+},
+{
+  "model": "user.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$gkhFK8TDXpgWYAFetsHBvx$rJJk/HKYHz3ZjnMj+VQrzdeHpS3f9+3FNcbdd6yQhSk=",
+    "last_login": "2023-10-23T17:53:02.155Z",
+    "is_superuser": true,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-10-21T15:17:41.614Z",
+    "email": "admin.user@mail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$JrpGwDt4p8aB2inZqjcNMu$69tTt5UA9LYnT8MfG18fB3Yz3JIKcIYjhI1PSpbMOY8=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-10-24T07:20:09.328Z",
+    "email": "anna.cohen@mail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$Uar7dTPdDzYwr6ozhyG7iJ$BQOzfloCw+6WK/Rga53sIt4IUJ6M0/LmqeCZCdnBgOc=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-10-24T07:28:37.610Z",
+    "email": "jack.black@mail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$mYdHzxDYq5WUhEqNO0VBRT$5JHK7VXRr8KPuLdTACHrjUwa8EVOP/oPet+EVrco8Cs=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-10-24T07:34:38.095Z",
+    "email": "kate.smith@mail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$hQ6P2c8OcRJIydgC8afalw$7ATpExahWiuaidTWyCGK7en8mcAd0ZmxaoiuRPh/iS8=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-10-24T07:40:17.557Z",
+    "email": "william.white@mail.com",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
