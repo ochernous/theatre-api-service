@@ -36,6 +36,19 @@ You can load ModHeader extension for your browser and add request header (JWT). 
 
 - value: Bearer ioaADF3fsosERWERdfsdi4389ad
 
+### Environment Variables Setup
+
+1. Create a `.env` file in the root directory of your project.
+2. Add the following key-value pairs to the `.env` file. Example:
+
+```shell
+SECRET_KEY=<your-secret-key>
+DB_HOST=<your-db-host>
+DB_NAME=<your-db-name>
+DB_USER=<your-db-user>
+DB_PASSWORD=<your-db-password>
+DB_PORT=<your-db-port>
+```
 
 ## Features
 - JWT authenticated
